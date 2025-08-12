@@ -34,9 +34,12 @@ header {
     position: relative;
 }
 
-header .logo {
-    max-width: 200px;
+.logo {
+    max-width: 350px; /* Aumenta o tamanho máximo */
+    width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto 20px auto; /* Centraliza e dá espaço abaixo */
 }
 
 header h1, 
