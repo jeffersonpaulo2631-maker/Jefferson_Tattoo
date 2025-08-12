@@ -23,16 +23,35 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: rgba(17, 17, 17, 0.9);
-    padding: 20px 0;
+    background-color: #000; /* Preto puro */
+    background-image: url("Design-sem-nome.png"); /* Coloque o nome exato do seu arquivo */
+    background-size: cover; /* Preenche todo o espaço */
+    background-position: center top; /* Mostra bem o topo da imagem */
+    background-repeat: no-repeat;
+    padding: 40px 0;
     text-align: center;
-    border-bottom: 2px solid #e63946;
+    color: #fff;
+    position: relative;
 }
 
-.logo {
+header .logo {
     max-width: 200px;
     height: auto;
 }
+
+header h1, 
+header p {
+    margin: 10px 0;
+}
+
+/* Fundo preto sem a imagem para telas muito pequenas, se quiser */
+@media (max-width: 500px) {
+    header {
+        background-size: contain;
+        background-color: #000;
+    }
+}
+
 
 nav ul {
     list-style: none;
