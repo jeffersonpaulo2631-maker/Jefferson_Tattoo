@@ -9,31 +9,38 @@
 </head>
 <body>
     <header>
-        <img src="Jeferson_Tatto.img/Logotipo.png" alt="Logotipo.png" class="logo">
+        <img src="Jeferson_Tatto.img/Logotipo.png" alt="Logotipo Jefferson Tattoo" class="logo">
         <h1>Jefferson Tattoo</h1>
         <nav>
             <a href="index.html">Página Inicial</a>
-            <a href="Portfólio.html">Portfólio</a>
-            <a href="contato.html">Contato</a>
-            <a href="newsletter.html">Newsletter</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="contato.html" class="ativo">Contato</a>
+            <a href="Sombre mim.html">Sobre mim</a>
         </nav>
     </header>
 
     <main class="container">
-        <section>
-            <h2>Entre em contato</h2>
-            <p>Preencha o formulário abaixo ou fale comigo diretamente pelo WhatsApp para agendar sua tatuagem.</p>
+        <section class="informacoes-contato">
+            <h2>Meus contatos</h2>
+            <p><strong>Telefone/WhatsApp:</strong> <a href="https://wa.me/(87)981673178" target="_blank">Zap</a></p>
+            <p><strong>E-mail:</strong> <a href="mailto:JeffersonPaulo2631@gmail.com">jeffersonPaulo.com</a></p>
+            <p><strong>Cidade:</strong> Serra_Talhada (PE), Pernambuco</p>
+        </section>
+
+        <section class="form-contato">
+            <h2>Envie uma mensagem</h2>
+            <p>Preencha o formulário abaixo ou fale comigo diretamente pelo WhatsApp.</p>
             <form action="enviar_mensagem.php" method="post">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br><br>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
 
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required><br><br>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
 
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea><br><br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
 
-                <input type="submit" value="Enviar">
+                <button type="submit" class="btn-enviar">Enviar</button>
             </form>
         </section>
     </main>
