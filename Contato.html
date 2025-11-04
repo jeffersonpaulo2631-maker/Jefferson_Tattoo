@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,23 +16,47 @@
             <a href="contato.html" class="ativo">Contato</a>
             <a href="Sombre mim.html">Sobre mim</a>
         </nav>
-    </header>
+    </header><main class="container">
+    <section class="informacoes-contato">
+        <h2>Entre em Contato</h2>
+        <p>Fale comigo para tirar dúvidas, enviar sua ideia de tatuagem ou agendar seu atendimento a domicílio. Respondo o mais rápido possível! 👇</p>
 
-    <main class="container">
-        <section class="informacoes-contato">
-            <h2>Meus contatos</h2>
-            <p><strong>Telefone/WhatsApp:</strong> <a href="https://wa.me/(87)981673178" target="_blank">(87)981673178</a></p>
-            <p><strong>E-mail:</strong> <a href="mailto:JeffersonPaulo2631@gmail.com">jeffersonPaulo2631@gmail.com</a></p>
-            <p><strong>Cidade:</strong> Serra_Talhada (PE), Pernambuco</p>
-        </section>
-    </main>
+        <h3>📲 WhatsApp / Telefone</h3>
+        <p><a href="https://wa.me/5587981673178" target="_blank">(87) 98167-3178</a></p>
 
-    <a href="https://wa.me/(87)981673178" target="_blank" class="btn-whatsapp btn-whatsapp-fixed">
-        📲 Agendar pelo WhatsApp
-    </a>
+        <h3>📧 E-mail</h3>
+        <p><a href="mailto:JeffersonPaulo2631@gmail.com">jeffersonPaulo2631@gmail.com</a></p>
 
-    <footer>
-        <p>&copy; 2024 Jefferson Tattoo. Todos os direitos reservados.</p>
-    </footer>
+        <h3>📍 Localização</h3>
+        <p>Serra Talhada (PE) — Atendo também bairros próximos e cidades vizinhas.</p>
+    </section>
+
+    <section class="formulario-contato">
+        <h2>Envie sua ideia</h2>
+        <p>Preencha o formulário abaixo para solicitar um orçamento ou enviar sua referência:</p>
+
+        <form action="#" method="POST" class="form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+
+            <label for="mensagem">Mensagem / Ideia da tatuagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva sua ideia, local do corpo, tamanho aproximado..." required></textarea>
+
+            <button type="submit" class="btn-enviar">Enviar mensagem</button>
+        </form>
+    </section>
+</main>
+
+<a href="https://wa.me/5587981673178" target="_blank" class="btn-whatsapp btn-whatsapp-fixed">
+    📲 Agendar pelo WhatsApp
+</a>
+
+<footer>
+    <p>&copy; 2024 Jefferson Tattoo. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
