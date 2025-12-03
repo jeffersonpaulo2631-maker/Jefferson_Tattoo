@@ -1,157 +1,219 @@
-/* Importa fonte estilizada */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
-body {
+/* =========================================
+   RESET BASICO
+========================================= */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Orbitron', sans-serif;
-    color: #fff;
-    background-color: #000;
-    background-image: 
-        repeating-linear-gradient(45deg, #000 0, #000 40px, #fff 40px, #fff 41px),
-        repeating-linear-gradient(-45deg, #000 0, #000 40px, #fff 40px, #fff 41px);
-    background-size: 80px 80px;
-    background-blend-mode: multiply;
+    box-sizing: border-box;
 }
 
-/* Container central */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f0f0f;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Containers padrão */
 .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 
-/* Cabeçalho */
-header {
-    background-color: #000; /* Preto puro */
-    background-image: url("Design-sem-nome.png"); /* Coloque o nome exato do seu arquivo */
-    background-size: cover; /* Preenche todo o espaço */
-    background-position: center top; /* Mostra bem o topo da imagem */
-    background-repeat: no-repeat;
-    padding: 40px 0;
-    text-align: center;
-    color: #fff;
-    position: relative;
+/* =========================================
+   CABEÇALHO
+========================================= */
+.header {
+    background: #151515;
+    padding: 20px 0;
+    border-bottom: 1px solid #262626;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* LOGO + TÍTULO */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .logo {
-    max-width: 350px; /* Aumenta o tamanho máximo */
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px auto; /* Centraliza e dá espaço abaixo */
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
 }
 
-header h1, 
-header p {
-    margin: 10px 0;
+.brand h1 {
+    font-size: 1.8rem;
+    margin-bottom: 3px;
 }
 
-/* Fundo preto sem a imagem para telas muito pequenas, se quiser */
-@media (max-width: 500px) {
-    header {
-        background-size: contain;
-        background-color: #000;
-    }
+.brand p {
+    font-size: 0.9rem;
+    color: #bfbfbf;
 }
 
-
-nav ul {
+/* MENU */
+.menu ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* Alinha lado a lado no desktop */
-    flex-wrap: wrap; /* Permite quebrar linha se faltar espaço */
-    justify-content: center; /* Centraliza os botões */
-    gap: 10px; /* Espaçamento entre os botões */
+    display: flex;
+    gap: 20px;
 }
 
-nav li {
-    margin: 0; /* Remove margem fixa */
-}
-
-nav a {
-    background-color: #222;
-    color: #fff;
-    padding: 10px 20px;
-    border: 1px solid #444;
-    border-radius: 5px;
+.menu a {
     text-decoration: none;
+    color: #f0f0f0;
     font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    display: inline-block;
-    text-align: center;
-    min-width: 120px; /* Botões com tamanho mínimo */
+    transition: 0.3s ease;
 }
 
-nav a:hover {
-    background-color: #e63946;
-    color: #fff;
+.menu a:hover,
+.menu .active {
+    color: #ff5757;
 }
 
-/* Mobile: empilha os botões */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Coloca um abaixo do outro */
-        align-items: center; /* Centraliza no mobile */
-    }
-
-    nav a {
-        width: 100%; /* Ocupa toda a largura disponível */
-        max-width: 300px; /* Limita para não ficar exagerado */
-    }
-}
-
-/* Botão WhatsApp */
+/* BOTÃO WHATSAPP HEADER */
 .btn-whatsapp {
-    display: inline-block;
-    background-color: #25D366;
-    color: #fff !important;
-    padding: 12px 20px;
-    border-radius: 30px;
+    background: #25D366;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
     font-weight: bold;
     text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: 0.2s;
 }
 
 .btn-whatsapp:hover {
-    background-color: #1ebe5b;
-    transform: scale(1.05);
+    background: #1ebe5d;
 }
 
-/* Galeria */
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+/* =========================================
+   SEÇÕES
+========================================= */
+.section {
+    margin: 40px 0;
 }
 
-.image-gallery figure {
-    margin: 10px;
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ff5757;
+}
+
+.section p,
+.section li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #e4e4e4;
+}
+
+ol li,
+ul li {
+    margin-left: 20px;
+}
+
+/* =========================================
+   GALERIA
+========================================= */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.gallery-item {
+    background: #1a1a1a;
+    border-radius: 10px;
     overflow: hidden;
-    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: 0.3s;
 }
 
-.image-gallery img {
-    max-width: 300px;
-    height: auto;
-    border: 2px solid #e63946;
-    border-radius: 5px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.6);
 }
 
-.image-gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #e63946;
+.gallery-item img {
+    width: 100%;
+    display: block;
 }
 
-/* Rodapé */
-footer {
-    background-color: rgba(17, 17, 17, 0.9);
-    padding: 20px 0;
+.gallery-item figcaption {
+    padding: 10px;
     text-align: center;
-    font-size: 14px;
-    color: #aaa;
-    border-top: 2px solid #e63946;
+    font-size: 0.95rem;
+    color: #cfcfcf;
+}
+
+/* =========================================
+   RODAPÉ
+========================================= */
+.footer {
+    background: #151515;
+    padding: 20px 0;
+    border-top: 1px solid #262626;
+    text-align: center;
+}
+
+.footer a {
+    color: #ff5757;
+    text-decoration: none;
+}
+
+/* =========================================
+   BOTÃO WHATSAPP FLUTUANTE
+========================================= */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    z-index: 999;
+    transition: 0.2s;
+}
+
+.whatsapp-float img {
+    width: 35px;
+}
+
+.whatsapp-float:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+@media (max-width: 768px) {
+
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-whatsapp {
+        width: 100%;
+        text-align: center;
+    }
 }
