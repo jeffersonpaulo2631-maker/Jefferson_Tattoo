@@ -1,5 +1,5 @@
 /* =========================================
-   RESET BASICO
+   RESET GERAL
 ========================================= */
 * {
     margin: 0;
@@ -9,12 +9,12 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #0000000;  /* fundo mais preto */
-    color: #cccccc;       /* texto mais suave */
+    background: #000000; /* preto absoluto */
+    color: #cccccc;      /* cinza claro suave */
     line-height: 1.6;
 }
 
-/* Containers padrão */
+/* Container padrão */
 .container {
     width: 90%;
     max-width: 1100px;
@@ -25,9 +25,9 @@ body {
    CABEÇALHO
 ========================================= */
 .header {
-    background: #0a0a0a; /* preto mais profundo */
+    background: #000000; /* preto absoluto */
     padding: 20px 0;
-    border-bottom: 1px solid #1f1f1f; /* borda mais sutil */
+    border-bottom: 1px solid #1a1a1a; /* linha discreta */
 }
 
 .header-content {
@@ -37,7 +37,7 @@ body {
     flex-wrap: wrap;
 }
 
-/* LOGO + TÍTULO */
+/* LOGO + TEXTO */
 .logo-area {
     display: flex;
     align-items: center;
@@ -52,16 +52,17 @@ body {
 
 .brand h1 {
     font-size: 1.8rem;
-    margin-bottom: 3px;
     color: #f2f2f2; /* branco acinzentado */
 }
 
 .brand p {
     font-size: 0.9rem;
-    color: #bfbfbf;
+    color: #9e9e9e; /* cinza suave */
 }
 
-/* MENU */
+/* =========================================
+   MENU
+========================================= */
 .menu ul {
     list-style: none;
     display: flex;
@@ -70,29 +71,32 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #e6e6e6; /* mais claro */
+    color: #e6e6e6; /* cinza claro */
     font-weight: bold;
     transition: 0.3s ease;
 }
 
 .menu a:hover,
 .menu .active {
-    color: #ff5757; /* vermelho do logo */
+    color: #ffffff; /* branco */
 }
 
-/* BOTÃO WHATSAPP HEADER */
+/* =========================================
+   BOTÃO WHATSAPP DO CABEÇALHO
+========================================= */
 .btn-whatsapp {
-    background: #25D366;
-    color: #fff;
+    background: #1f1f1f;
+    color: #ffffff;
     padding: 10px 18px;
     border-radius: 6px;
-    font-weight: bold;
     text-decoration: none;
-    transition: 0.2s;
+    font-weight: bold;
+    border: 1px solid #333;
+    transition: 0.3s ease;
 }
 
 .btn-whatsapp:hover {
-    background: #1ebe5d;
+    background: #333333;
 }
 
 /* =========================================
@@ -105,23 +109,23 @@ body {
 h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #f2f2f2; /* títulos branco/cinza */
+    color: #f2f2f2; /* branco elegante */
 }
 
 .section p,
 .section li {
     font-size: 1rem;
+    color: #d4d4d4; /* cinza para texto */
     margin-bottom: 10px;
-    color: #cccccc; /* texto padrão */
 }
 
-ol li,
-ul li {
+ul li,
+ol li {
     margin-left: 20px;
 }
 
 /* =========================================
-   GALERIA
+   GALERIA DE IMAGENS
 ========================================= */
 .gallery-grid {
     display: grid;
@@ -130,16 +134,17 @@ ul li {
 }
 
 .gallery-item {
-    background: #0f0f0f; /* mais black */
-    border-radius: 10px;
+    background: #000000; /* preto total */
+    border: 1px solid #1a1a1a; /* borda discreta */
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 12px rgba(0,0,0,0.9);
     transition: 0.3s;
 }
 
 .gallery-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.7);
+    box-shadow: 0 0 18px rgba(255,255,255,0.05);
 }
 
 .gallery-item img {
@@ -151,21 +156,21 @@ ul li {
     padding: 10px;
     text-align: center;
     font-size: 0.95rem;
-    color: #d6d6d6;
+    color: #bdbdbd;
 }
 
 /* =========================================
    RODAPÉ
 ========================================= */
 .footer {
-    background: #0a0a0a;
+    background: #000000; /* preto absoluto */
     padding: 20px 0;
-    border-top: 1px solid #1f1f1f;
     text-align: center;
+    border-top: 1px solid #1a1a1a;
 }
 
 .footer a {
-    color: #ff5757;
+    color: #f2f2f2;
     text-decoration: none;
 }
 
@@ -176,16 +181,17 @@ ul li {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #25D366;
+    background: #111111;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    transition: 0.3s ease;
     z-index: 999;
-    transition: 0.2s;
+    border: 1px solid #333;
 }
 
 .whatsapp-float img {
@@ -193,8 +199,7 @@ ul li {
 }
 
 .whatsapp-float:hover {
-    background: #1ebe5d;
-    transform: scale(1.05);
+    background: #1c1c1c;
 }
 
 /* =========================================
@@ -215,6 +220,5 @@ ul li {
 
     .btn-whatsapp {
         width: 100%;
-        text-align: center;
     }
 }
