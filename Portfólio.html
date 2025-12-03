@@ -1,39 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Portfólio de [Seu Nome]</title>
-   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de tatuagens — Jefferson Tattoo, especialista em arte oriental e tatuagem a domicílio.">
+    <title>Portfólio - Jefferson Tattoo</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-     <img src="Jeferson_Tatto.img/Logotipo.png" alt="Logotipo.png"<div></div>>
-        <h1>Jefferson Tattoo</h1>
-        <nav>
-            <a href="index.html">Página Inicial</a>
-            <a href="Portfólio.html">Portfólio</a>
-            <a href="contato.html">Contato</a>
-            <a href="Sombre mim.html">Sobre mim</a>
-        </nav>
+
+    <!-- ==============================
+         CABEÇALHO
+    =============================== -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo-area">
+                <img src="Jeferson_Tatto.img/Logotipo.png" alt="Logotipo Jefferson Tattoo" class="logo">
+                <div class="brand">
+                    <h1>Jefferson Tattoo</h1>
+                    <p>Arte oriental no conforto da sua casa</p>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="Portfólio.html" class="active">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="Sombre mim.html">Sobre mim</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/5587981673178" target="_blank" class="btn-whatsapp">
+                📲 Agendar pelo WhatsApp
+            </a>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Meus Trabalhos</h2>
-            <div class="gallery">
-                <figure>
-                    <img src="imagens/tatuagem1.jpg" alt="Tatuagem 1">
-                    <figcaption>Tatuagem 1 - Estilo: [Estilo] - Técnica: [Técnica]</figcaption>
-                </figure>
-                <figure>
-                    <img src="imagens/tatuagem2.jpg" alt="Tatuagem 2">
-                    <figcaption>Tatuagem 2 - Estilo: [Estilo] - Técnica: [Técnica]</figcaption>
-                </figure>
-                </div>
-        </section>
+    <!-- ==============================
+         TÍTULO DA PÁGINA
+    =============================== -->
+    <section class="container section">
+        <h2>Portfólio de Tatuagens</h2>
+        <p>Alguns dos meus trabalhos realizados em estilo oriental, geek e peças personalizadas.</p>
+    </section>
+
+    <!-- ==============================
+         GALERIA PROFISSIONAL
+    =============================== -->
+    <main class="container section gallery-grid">
+
+        <!-- FOTO 1 -->
+        <figure class="gallery-item">
+            <img src="imagens/tatuagem1.jpg" alt="Tatuagem Oriental Dragão">
+            <figcaption>Dragão — Estilo Oriental</figcaption>
+        </figure>
+
+        <!-- FOTO 2 -->
+        <figure class="gallery-item">
+            <img src="imagens/tatuagem2.jpg" alt="Carpa Koi Tatuagem">
+            <figcaption>Carpa Koi — Persistência e força</figcaption>
+        </figure>
+
+        <!-- FOTO 3 (exemplo adicional) -->
+        <figure class="gallery-item">
+            <img src="imagens/tatuagem3.jpg" alt="Flor de Lótus Tatuagem">
+            <figcaption>Flor de Lótus — Pureza e renascimento</figcaption>
+        </figure>
+
+        <!-- FOTO 4 -->
+        <figure class="gallery-item">
+            <img src="imagens/tatuagem4.jpg" alt="Samurai Tatuagem">
+            <figcaption>Samurai — Honra e disciplina</figcaption>
+        </figure>
+
     </main>
 
-    <footer>
-        <p>        <p>&copy; 2024 Jefferson Tattoo. Todos os direitos reservados.</p>
+    <!-- ==============================
+         RODAPÉ
+    =============================== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Jefferson Tattoo. Todos os direitos reservados. | 
+                <a href="redes-sociais.html">Redes Sociais</a>
+            </p>
+        </div>
     </footer>
+
 </body>
 </html>
