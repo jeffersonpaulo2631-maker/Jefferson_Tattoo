@@ -3,58 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conheça Jefferson Tattoo, artista apaixonado por tatuagens e desenhos exclusivos.">
+    <meta name="description" content="Conheça a história e o trabalho de Jefferson Tattoo — artista especializado em estilo oriental e tatuagens personalizadas.">
     <title>Sobre Mim - Jefferson Tattoo</title>
-    <link rel="stylesheet" href="style.css"> <!-- Mantendo seu CSS -->
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <!-- Logotipo -->
-        <img src="Jeferson_Tatto.img/Logotipo.png" alt="Logotipo Jefferson Tattoo" class="logo">
-        
-        <h1>Jefferson Tattoo</h1>
-        
-        <nav>
-            <a href="index.html">Página Inicial</a>
-            <a href="portfolio.html">Portfólio</a>
-            <a href="contato.html">Contato</a>
-            <a href="sombre.html" class="ativo">Sobre Mim</a>
-        </nav>
+
+    <!-- ==============================
+         CABEÇALHO
+    =============================== -->
+    <header class="header">
+        <div class="container header-content">
+
+            <div class="logo-area">
+                <img src="Jeferson_Tatto.img/Logotipo.png" alt="Logotipo Jefferson Tattoo" class="logo">
+                <div class="brand">
+                    <h1>Jefferson Tattoo</h1>
+                    <p>Arte oriental no conforto da sua casa</p>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="Portfólio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="Sombre mim.html" class="active">Sobre mim</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/5587981673178" target="_blank" class="btn-whatsapp">
+                📲 Agendar pelo WhatsApp
+            </a>
+        </div>
     </header>
 
-    <main class="container">
-        <!-- Seção Sobre -->
-        <section class="sobre">
+    <!-- ==============================
+         SOBRE MIM
+    =============================== -->
+    <main class="container section">
+
+        <section class="sobre-mim">
             <h2>Sobre Mim</h2>
+
             <div class="perfil">
                 <img src="Jeferson_Tatto.img/foto-jefferson.jpg" alt="Foto de Jefferson Tattoo" class="foto-perfil">
+
                 <div class="bio">
-                    <p>Olá! Eu sou <strong>Jefferson</strong>, artista apaixonado por tatuagens e desenhos. Desde cedo sempre tive contato com a arte, e hoje transformo ideias em <em>traços que contam histórias</em>.</p>
-                    <p>Trabalho tanto com tatuagens autorais quanto com artes personalizadas, trazendo sempre autenticidade em cada projeto.</p>
-                    <p>Quando não estou tatuando, gosto de criar ilustrações e explorar novas técnicas de desenho.</p>
+                    <p>
+                        Olá! Sou <strong>Jefferson</strong>, artista apaixonado por tatuagem, desenhos 
+                        autorais e pela cultura visual oriental. Desde muito jovem estive cercado por arte, 
+                        e hoje transformo ideias em <em>traços que carregam significado</em>.
+                    </p>
+
+                    <p>
+                        Meu trabalho combina estética, técnica e narrativa — cada tatuagem é pensada 
+                        como uma peça única, respeitando a personalidade e o estilo de cada cliente.
+                    </p>
+
+                    <p>
+                        Trabalho com tatuagens personalizadas, criações exclusivas e projetos que vão 
+                        desde peças pequenas até orientais detalhadas.  
+                    </p>
+
+                    <p>
+                        Quando não estou tatuando, passo meu tempo estudando novas técnicas, criando 
+                        ilustrações e explorando referências de arte tradicional japonesa.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Seção Galeria -->
-        <section class="galeria">
-            <h2>Meu processo criativo</h2>
-            <p>Aqui estão alguns registros meus desenhando e criando artes exclusivas:</p>
+        <!-- ==============================
+             PROCESSO CRIATIVO
+        =============================== -->
+        <section class="galeria section">
+            <h2>Meu Processo Criativo</h2>
+            <p>
+                Aqui estão alguns registros meus desenhando, criando composições e trabalhando em 
+                projetos autorais.
+            </p>
+
             <div class="fotos-desenhos">
-                <img src="Jeferson_Tatto.img/desenho1.jpg" alt="Jefferson desenhando 1">
-                <img src="Jeferson_Tatto.img/desenho2.jpg" alt="Jefferson desenhando 2">
-                <img src="Jeferson_Tatto.img/desenho3.jpg" alt="Jefferson desenhando 3">
+                <figure>
+                    <img src="Jeferson_Tatto.img/desenho1.jpg" alt="Jefferson desenhando 1">
+                </figure>
+
+                <figure>
+                    <img src="Jeferson_Tatto.img/desenho2.jpg" alt="Jefferson desenhando 2">
+                </figure>
+
+                <figure>
+                    <img src="Jeferson_Tatto.img/desenho3.jpg" alt="Jefferson desenhando 3">
+                </figure>
             </div>
         </section>
+
     </main>
 
-    <!-- Botão WhatsApp -->
-    <a href="https://wa.me/(87)981673178" target="_blank" class="btn-whatsapp btn-whatsapp-fixed">
-        📲 Agendar pelo WhatsApp
+    <!-- ==============================
+         BOTÃO WHATSAPP FLUTUANTE
+    =============================== -->
+    <a class="whatsapp-float" href="https://wa.me/5587981673178" target="_blank">
+        <img src="Jeferson_Tatto.img/whatsapp.png" alt="WhatsApp">
     </a>
 
-    <footer>
-        <p>&copy; 2024 Jefferson Tattoo. Todos os direitos reservados.</p>
+    <!-- ==============================
+         RODAPÉ
+    =============================== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Jefferson Tattoo. Todos os direitos reservados.</p>
+        </div>
     </footer>
+
 </body>
 </html>
