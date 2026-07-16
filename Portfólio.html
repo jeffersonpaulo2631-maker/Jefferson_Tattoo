@@ -3,91 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de tatuagens — Jefferson Tattoo, especialista em arte oriental e tatuagem a domicílio.">
-    <title>Portfólio - Jefferson Tattoo</title>
 
+    <title>Portfólio | Jefferson Tattoo</title>
+    <meta name="description" content="Conheça o portfólio da Jefferson Tattoo: tatuagens orientais, geek e projetos personalizados com atendimento a domicílio em Serra Talhada-PE.">
+    <meta name="author" content="Jefferson Tattoo">
+    <meta name="theme-color" content="#000000">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Portfólio | Jefferson Tattoo">
+    <meta property="og:description" content="Trabalhos em estilo oriental, geek e projetos personalizados em Serra Talhada-PE.">
+    <meta property="og:image" content="Tatuagem/Dragão.jpg">
+
+    <link rel="icon" href="Imagem/Logo.jpg" type="image/jpeg">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
 
-    <!-- ==============================
-         CABEÇALHO
-    =============================== -->
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="container header-content">
-            <div class="logo-area">
+            <a class="logo-area" href="index.html" aria-label="Ir para a página inicial">
                 <img src="Imagem/Logo.jpg" alt="Logotipo Jefferson Tattoo" class="logo">
                 <div class="brand">
                     <h1>Jefferson Tattoo</h1>
                     <p>Arte oriental no conforto da sua casa</p>
                 </div>
-            </div>
+            </a>
 
-            <nav class="menu">
+            <nav class="menu" aria-label="Navegação principal">
                 <ul>
-                    <li><a href="index.html">Página Inicial</a></li>
-                    <li><a href="Portfólio.html" class="active">Portfólio</a></li>
+                    <li><a href="index.html">Página inicial</a></li>
+                    <li><a href="portfolio.html" class="active" aria-current="page">Portfólio</a></li>
                     <li><a href="contato.html">Contato</a></li>
-                    <li><a href="Sombre mim.html">Sobre mim</a></li>
+                    <li><a href="sobre-mim.html">Sobre mim</a></li>
                 </ul>
             </nav>
 
-            <a href="https://wa.me/5587981823489" target="_blank" class="btn-whatsapp">
-                📲 Agendar pelo WhatsApp
+            <a
+                href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-whatsapp"
+            >
+                Agendar pelo WhatsApp
             </a>
         </div>
     </header>
 
-    <!-- ==============================
-         TÍTULO DA PÁGINA
-    =============================== -->
-    <section class="container section">
-        <h2>Portfólio de Tatuagens</h2>
-        <p>Alguns dos meus trabalhos realizados em estilo oriental, geek e peças personalizadas.</p>
-    </section>
+    <main id="conteudo-principal">
+        <section class="hero" aria-labelledby="portfolio-title">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">Traço, composição e identidade</p>
+                    <h2 id="portfolio-title">Projetos criados para ganhar vida na pele.</h2>
+                    <p class="hero-text">
+                        Explore alguns dos meus trabalhos em estilo oriental, geek e personalizado.
+                        Cada projeto é adaptado ao tamanho, ao local do corpo e à ideia de cada cliente.
+                    </p>
 
-    <!-- ==============================
-         GALERIA PROFISSIONAL
-    =============================== -->
-    <main class="container section gallery-grid">
+                    <div class="hero-actions">
+                        <a
+                            href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Gostaria%20de%20criar%20um%20projeto%20de%20tatuagem%20personalizado."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn-primary"
+                        >
+                            Criar meu projeto
+                        </a>
+                        <a href="#galeria" class="btn-secondary">Ver trabalhos</a>
+                    </div>
 
-        <!-- FOTO 1 -->
-        <figure class="gallery-item">
-            <img src="Tatuagem/Dragão.jpg" alt="Tatuagem Oriental Dragão">
-            <figcaption>Dragão — Estilo Oriental</figcaption>
-        </figure>
+                    <ul class="hero-highlights" aria-label="Características dos projetos">
+                        <li>Desenhos personalizados</li>
+                        <li>Estilo oriental e geek</li>
+                        <li>Atendimento a domicílio</li>
+                    </ul>
+                </div>
 
-        <!-- FOTO 2 -->
-        <figure class="gallery-item">
-            <img src="Tatuagem/Carpa 01.jpg" alt="Carpa Koi Tatuagem">
-            <figcaption>Carpa Koi — Persistência e força</figcaption>
-        </figure>
+                <figure class="hero-image">
+                    <img src="Tatuagem/Dragão.jpg" alt="Tatuagem de dragão em estilo oriental realizada por Jefferson Tattoo">
+                    <figcaption>Dragão oriental, composição desenvolvida para acompanhar o formato do braço.</figcaption>
+                </figure>
+            </div>
+        </section>
 
-        <!-- FOTO 3 (exemplo adicional) -->
-        <figure class="gallery-item">
-            <img src="Tatuagem/Carpa 02.jpg" alt="Flor de Lótus Tatuagem">
-            <figcaption>Flor de Lótus — Pureza e renascimento</figcaption>
-        </figure>
+        <section class="container section" aria-labelledby="direcao-title">
+            <div class="section-heading">
+                <p class="eyebrow">Minha direção artística</p>
+                <h2 id="direcao-title">Tatuagens com presença e significado</h2>
+            </div>
 
-        <!-- FOTO 4 -->
-        <figure class="gallery-item">
-            <img src="imagens/tatuagem4.jpg" alt="Samurai Tatuagem">
-            <figcaption>Samurai — Honra e disciplina</figcaption>
-        </figure>
+            <div class="benefits-grid">
+                <article class="benefit-card">
+                    <span class="card-icon" aria-hidden="true">龍</span>
+                    <h3>Oriental</h3>
+                    <p>Dragões, carpas, flores e outros símbolos reinterpretados para cada composição.</p>
+                </article>
 
+                <article class="benefit-card">
+                    <span class="card-icon" aria-hidden="true">✦</span>
+                    <h3>Geek e anime</h3>
+                    <p>Personagens, cenas e elementos marcantes adaptados para funcionar bem como tatuagem.</p>
+                </article>
+
+                <article class="benefit-card">
+                    <span class="card-icon" aria-hidden="true">✎</span>
+                    <h3>Personalizado</h3>
+                    <p>Referências, tamanho e posicionamento são estudados antes da criação do desenho final.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-contrast" id="galeria" aria-labelledby="galeria-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Trabalhos selecionados</p>
+                    <h2 id="galeria-title">Portfólio de tatuagens</h2>
+                </div>
+
+                <div class="gallery-grid">
+                    <figure class="gallery-item">
+                        <a href="Tatuagem/Dragão.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir imagem ampliada da tatuagem de dragão">
+                            <img
+                                src="Tatuagem/Dragão.jpg"
+                                alt="Tatuagem de dragão em estilo oriental no braço"
+                                loading="lazy"
+                            >
+                        </a>
+                        <figcaption>Dragão oriental • força, sabedoria e proteção</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <a href="Tatuagem/Carpa 01.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir imagem ampliada da tatuagem de carpa Koi">
+                            <img
+                                src="Tatuagem/Carpa 01.jpg"
+                                alt="Tatuagem de carpa Koi em composição oriental"
+                                loading="lazy"
+                            >
+                        </a>
+                        <figcaption>Carpa Koi • persistência, coragem e transformação</figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <a href="Tatuagem/Carpa 02.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir imagem ampliada de arte oriental com carpa">
+                            <img
+                                src="Tatuagem/Carpa 02.jpg"
+                                alt="Arte de carpa com elementos orientais"
+                                loading="lazy"
+                            >
+                        </a>
+                        <figcaption>Composição oriental • desenho e adaptação personalizada</figcaption>
+                    </figure>
+                </div>
+
+                <p class="section-note">
+                    Este portfólio será ampliado conforme novos trabalhos forem concluídos e fotografados.
+                </p>
+            </div>
+        </section>
+
+        <section class="container section" aria-labelledby="projeto-title">
+            <div class="section-heading">
+                <p class="eyebrow">Do primeiro contato ao desenho final</p>
+                <h2 id="projeto-title">Como nasce um projeto personalizado</h2>
+            </div>
+
+            <ol class="process-grid">
+                <li class="process-card">
+                    <span class="step-number">01</span>
+                    <h3>Referência</h3>
+                    <p>Você envia imagens, ideias e elementos que gostaria de incluir.</p>
+                </li>
+                <li class="process-card">
+                    <span class="step-number">02</span>
+                    <h3>Planejamento</h3>
+                    <p>Definimos tamanho, local do corpo, estilo e nível de detalhes.</p>
+                </li>
+                <li class="process-card">
+                    <span class="step-number">03</span>
+                    <h3>Composição</h3>
+                    <p>O desenho é organizado para acompanhar o formato da área escolhida.</p>
+                </li>
+                <li class="process-card">
+                    <span class="step-number">04</span>
+                    <h3>Aprovação</h3>
+                    <p>Os principais detalhes são alinhados antes da sessão.</p>
+                </li>
+                <li class="process-card">
+                    <span class="step-number">05</span>
+                    <h3>Tatuagem</h3>
+                    <p>O projeto aprovado é preparado para aplicação no atendimento.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="final-cta" aria-labelledby="cta-title">
+            <div class="container final-cta-content">
+                <div>
+                    <p class="eyebrow">Seu projeto pode ser o próximo</p>
+                    <h2 id="cta-title">Envie sua ideia e receba uma avaliação gratuita.</h2>
+                </div>
+
+                <a
+                    href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20solicitar%20uma%20avalia%C3%A7%C3%A3o%20para%20minha%20ideia."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-primary"
+                >
+                    Solicitar avaliação
+                </a>
+            </div>
+        </section>
     </main>
 
-    <!-- ==============================
-         RODAPÉ
-    =============================== -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Jefferson Tattoo. Todos os direitos reservados. | 
-                <a href="redes-sociais.html">Redes Sociais</a>
-            </p>
+        <div class="container footer-grid">
+            <div>
+                <strong>Jefferson Tattoo</strong>
+                <p>Tatuagem oriental, geek e personalizada em Serra Talhada-PE.</p>
+            </div>
+
+            <nav aria-label="Links do rodapé">
+                <a href="index.html">Página inicial</a>
+                <a href="contato.html">Contato</a>
+                <a href="sobre-mim.html">Sobre mim</a>
+            </nav>
+
+            <div>
+                <p>© 2026 Jefferson Tattoo. Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
 
+    <a
+        class="whatsapp-float"
+        href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar com Jefferson pelo WhatsApp"
+    >
+        <img src="Imagem/images.jpg" alt="" aria-hidden="true">
+    </a>
 </body>
 </html>
