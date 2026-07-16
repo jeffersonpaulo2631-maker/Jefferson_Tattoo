@@ -3,119 +3,359 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conheça a história e o trabalho de Jefferson Tattoo — artista especializado em estilo oriental e tatuagens personalizadas.">
-    <title>Sobre Mim - Jefferson Tattoo</title>
 
+    <title>Sobre Mim | Jefferson Tattoo</title>
+    <meta
+        name="description"
+        content="Conheça Jefferson Tattoo, artista focado em tatuagens orientais, geek e projetos personalizados com atendimento a domicílio em Serra Talhada-PE."
+    >
+    <meta name="author" content="Jefferson Tattoo">
+    <meta name="theme-color" content="#000000">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Sobre Mim | Jefferson Tattoo">
+    <meta
+        property="og:description"
+        content="Conheça minha trajetória, referências artísticas e processo de criação de tatuagens personalizadas."
+    >
+    <meta property="og:image" content="Imagem/foto-jefferson.jpg">
+
+    <link rel="icon" href="Imagem/Logo.jpg" type="image/jpeg">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
 
-    <!-- ==============================
-         CABEÇALHO
-    =============================== -->
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="container header-content">
-
-            <div class="logo-area">
+            <a class="logo-area" href="index.html" aria-label="Ir para a página inicial">
                 <img src="Imagem/Logo.jpg" alt="Logotipo Jefferson Tattoo" class="logo">
+
                 <div class="brand">
                     <h1>Jefferson Tattoo</h1>
                     <p>Arte oriental no conforto da sua casa</p>
                 </div>
-            </div>
+            </a>
 
-            <nav class="menu">
+            <nav class="menu" aria-label="Navegação principal">
                 <ul>
-                    <li><a href="index.html">Página Inicial</a></li>
-                    <li><a href="Portfólio.html">Portfólio</a></li>
+                    <li><a href="index.html">Página inicial</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
                     <li><a href="contato.html">Contato</a></li>
-                    <li><a href="Sombre mim.html" class="active">Sobre mim</a></li>
+                    <li>
+                        <a href="sobre-mim.html" class="active" aria-current="page">
+                            Sobre mim
+                        </a>
+                    </li>
                 </ul>
             </nav>
 
-        
+            <a
+                href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Conheci%20seu%20trabalho%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-whatsapp"
+            >
+                Agendar pelo WhatsApp
+            </a>
         </div>
     </header>
 
-    <!-- ==============================
-         SOBRE MIM
-    =============================== -->
-    <main class="container section">
+    <main id="conteudo-principal">
+        <section class="hero" aria-labelledby="sobre-title">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">Artista • desenhista • tatuador</p>
 
-        <section class="sobre-mim">
-            <h2>Sobre Mim</h2>
+                    <h2 id="sobre-title">
+                        Cada traço começa com uma ideia e ganha identidade na pele.
+                    </h2>
 
-            <div class="perfil">
-                <img src="Imagem/foto-jefferson.jpg" alt="Foto de Jefferson Tattoo" class="foto-perfil">
+                    <p class="hero-text">
+                        Sou Jefferson, artista focado em tatuagens orientais, geek e
+                        projetos personalizados. Minha trajetória é construída com estudo,
+                        prática e atenção aos detalhes de cada composição.
+                    </p>
 
-                <div class="bio">
+                    <div class="hero-actions">
+                        <a href="portfolio.html" class="btn-primary">
+                            Conhecer meus trabalhos
+                        </a>
+
+                        <a
+                            href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Gostaria%20de%20conversar%20sobre%20uma%20ideia%20de%20tatuagem."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn-secondary"
+                        >
+                            Falar comigo
+                        </a>
+                    </div>
+
+                    <ul class="hero-highlights" aria-label="Características do trabalho">
+                        <li>Projetos personalizados</li>
+                        <li>Referências orientais e geek</li>
+                        <li>Atendimento em Serra Talhada-PE</li>
+                    </ul>
+                </div>
+
+                <figure class="hero-image">
+                    <img
+                        src="Imagem/foto-jefferson.jpg"
+                        alt="Jefferson, artista responsável pela Jefferson Tattoo"
+                    >
+                    <figcaption>
+                        Jefferson Tattoo • arte, estudo e evolução em cada projeto.
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="container section" aria-labelledby="trajetoria-title">
+            <div class="two-column">
+                <div>
+                    <div class="section-heading">
+                        <p class="eyebrow">Minha trajetória</p>
+                        <h2 id="trajetoria-title">Da ilustração para a arte na pele</h2>
+                    </div>
+
                     <p>
-                        Olá! Sou <strong>Jefferson</strong>, artista apaixonado por tatuagem, desenhos 
-                        autorais e pela cultura visual oriental. Desde muito jovem estive cercado por arte, 
-                        e hoje transformo ideias em <em>traços que carregam significado</em>.
+                        O desenho sempre foi a base do meu trabalho. Com o tempo, passei a
+                        estudar como linhas, sombras, símbolos e composições poderiam ser
+                        adaptados para acompanhar o formato do corpo.
                     </p>
 
                     <p>
-                        Meu trabalho combina estética, técnica e narrativa — cada tatuagem é pensada 
-                        como uma peça única, respeitando a personalidade e o estilo de cada cliente.
+                        Tenho forte interesse pela cultura visual oriental, por personagens
+                        de anime e por projetos que carregam significado pessoal. Em vez de
+                        apenas copiar uma referência, procuro entender a ideia do cliente e
+                        transformá-la em uma composição coerente.
                     </p>
 
                     <p>
-                        Trabalho com tatuagens personalizadas, criações exclusivas e projetos que vão 
-                        desde peças pequenas até orientais detalhadas.  
+                        Minha evolução acontece de forma contínua: estudando técnicas,
+                        praticando desenho, analisando referências e registrando cada novo
+                        trabalho para aperfeiçoar os próximos.
                     </p>
+                </div>
 
-                    <p>
-                        Quando não estou tatuando, passo meu tempo estudando novas técnicas, criando 
-                        ilustrações e explorando referências de arte tradicional japonesa.
-                    </p>
+                <aside class="service-area-card" aria-labelledby="compromisso-title">
+                    <p class="eyebrow">Meu compromisso</p>
+                    <h3 id="compromisso-title">O que você pode esperar do atendimento</h3>
+
+                    <ul class="check-list">
+                        <li>Escuta cuidadosa da sua ideia e das suas referências</li>
+                        <li>Planejamento de tamanho, posição e composição</li>
+                        <li>Comunicação clara antes do agendamento</li>
+                        <li>Atenção às práticas de higiene e biossegurança</li>
+                        <li>Orientações de cuidados após a tatuagem</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section section-contrast" aria-labelledby="valores-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">O que guia meu trabalho</p>
+                    <h2 id="valores-title">Arte com intenção, não produção em série</h2>
+                </div>
+
+                <div class="benefits-grid">
+                    <article class="benefit-card">
+                        <span class="card-icon" aria-hidden="true">✎</span>
+                        <h3>Criação personalizada</h3>
+                        <p>
+                            Cada projeto é adaptado à ideia, ao tamanho e ao local do corpo
+                            escolhido pelo cliente.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <span class="card-icon" aria-hidden="true">龍</span>
+                        <h3>Identidade artística</h3>
+                        <p>
+                            Referências orientais, geek e autorais formam a direção visual
+                            que desenvolvo em meus trabalhos.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <span class="card-icon" aria-hidden="true">↗</span>
+                        <h3>Evolução contínua</h3>
+                        <p>
+                            Estudo, prática e análise fazem parte do processo para melhorar
+                            o traço e a qualidade de cada novo projeto.
+                        </p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- ==============================
-             PROCESSO CRIATIVO
-        =============================== -->
-        <section class="galeria section">
-            <h2>Meu Processo Criativo</h2>
+        <section class="container section" aria-labelledby="processo-criativo-title">
+            <div class="section-heading">
+                <p class="eyebrow">Bastidores da criação</p>
+                <h2 id="processo-criativo-title">Meu processo criativo</h2>
+            </div>
+
             <p>
-                Aqui estão alguns registros meus desenhando, criando composições e trabalhando em 
-                projetos autorais.
+                Antes de uma ideia chegar à pele, ela passa por pesquisa, esboços,
+                composição e ajustes. Estes espaços podem mostrar desenhos, estudos e
+                registros do desenvolvimento dos projetos.
             </p>
 
-            <div class="fotos-desenhos">
-                <figure>
-                    <img src="nbhhhh/desenho1.jpg" alt="Jefferson desenhando 1">
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <a
+                        href="Imagem/desenho1.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir imagem ampliada do primeiro estudo artístico"
+                    >
+                        <img
+                            src="Imagem/desenho1.jpg"
+                            alt="Jefferson desenvolvendo um estudo de desenho"
+                            loading="lazy"
+                        >
+                    </a>
+                    <figcaption>Estudo inicial • pesquisa e construção da ideia</figcaption>
                 </figure>
 
-                <figure>
-                    <img src="Jeferson_Tatto.img/desenho2.jpg" alt="Jefferson desenhando 2">
+                <figure class="gallery-item">
+                    <a
+                        href="Imagem/desenho2.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir imagem ampliada do segundo estudo artístico"
+                    >
+                        <img
+                            src="Imagem/desenho2.jpg"
+                            alt="Desenho autoral desenvolvido por Jefferson"
+                            loading="lazy"
+                        >
+                    </a>
+                    <figcaption>Composição • organização dos elementos e do movimento</figcaption>
                 </figure>
 
-                <figure>
-                    <img src="Jeferson_Tatto.img/desenho3.jpg" alt="Jefferson desenhando 3">
+                <figure class="gallery-item">
+                    <a
+                        href="Imagem/desenho3.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir imagem ampliada do terceiro estudo artístico"
+                    >
+                        <img
+                            src="Imagem/desenho3.jpg"
+                            alt="Detalhes de um projeto artístico para tatuagem"
+                            loading="lazy"
+                        >
+                    </a>
+                    <figcaption>Refinamento • linhas, detalhes e preparação do projeto</figcaption>
                 </figure>
             </div>
         </section>
 
+        <section class="section section-contrast" aria-labelledby="metodo-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Como desenvolvo meu trabalho</p>
+                    <h2 id="metodo-title">Um processo construído etapa por etapa</h2>
+                </div>
+
+                <ol class="process-grid">
+                    <li class="process-card">
+                        <span class="step-number">01</span>
+                        <h3>Pesquisa</h3>
+                        <p>Analiso símbolos, referências e possibilidades para o projeto.</p>
+                    </li>
+
+                    <li class="process-card">
+                        <span class="step-number">02</span>
+                        <h3>Esboço</h3>
+                        <p>As primeiras formas organizam a ideia e a direção da composição.</p>
+                    </li>
+
+                    <li class="process-card">
+                        <span class="step-number">03</span>
+                        <h3>Adaptação</h3>
+                        <p>O desenho é pensado para o tamanho e a região do corpo escolhida.</p>
+                    </li>
+
+                    <li class="process-card">
+                        <span class="step-number">04</span>
+                        <h3>Ajustes</h3>
+                        <p>Os elementos principais são alinhados antes da preparação final.</p>
+                    </li>
+
+                    <li class="process-card">
+                        <span class="step-number">05</span>
+                        <h3>Aplicação</h3>
+                        <p>O projeto aprovado é preparado para a sessão de tatuagem.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="final-cta" aria-labelledby="cta-title">
+            <div class="container final-cta-content">
+                <div>
+                    <p class="eyebrow">Vamos criar algo com a sua identidade</p>
+                    <h2 id="cta-title">
+                        Envie sua ideia e comece seu projeto personalizado.
+                    </h2>
+                </div>
+
+                <a
+                    href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Li%20sobre%20seu%20trabalho%20e%20quero%20come%C3%A7ar%20um%20projeto%20de%20tatuagem."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-primary"
+                >
+                    Conversar no WhatsApp
+                </a>
+            </div>
+        </section>
     </main>
 
-    <!-- ==============================
-         BOTÃO WHATSAPP FLUTUANTE
-    =============================== -->
-    <a class="whatsapp-float" href="https://wa.me/5587981823489" target="_blank">
-        <img src="Imagem/images.jpg" alt="WhatsApp">
-    </a>
-
-    <!-- ==============================
-         RODAPÉ
-    =============================== -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Jefferson Tattoo. Todos os direitos reservados.</p>
+        <div class="container footer-grid">
+            <div>
+                <strong>Jefferson Tattoo</strong>
+                <p>
+                    Tatuagens orientais, geek e personalizadas com atendimento
+                    a domicílio em Serra Talhada-PE.
+                </p>
+            </div>
+
+            <nav aria-label="Links do rodapé">
+                <a href="index.html">Página inicial</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="contato.html">Contato</a>
+                <a href="sobre-mim.html">Sobre mim</a>
+            </nav>
+
+            <div>
+                <strong>Contato</strong>
+                <p>
+                    <a href="tel:+5587981823489">(87) 98182-3489</a><br>
+                    <a href="mailto:JeffersonPaulo2631@gmail.com">
+                        JeffersonPaulo2631@gmail.com
+                    </a>
+                </p>
+            </div>
         </div>
     </footer>
 
+    <a
+        class="whatsapp-float"
+        href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Vim%20pela%20p%C3%A1gina%20Sobre%20Mim%20e%20gostaria%20de%20conversar."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar com Jefferson Tattoo pelo WhatsApp"
+    >
+        <img src="Imagem/images.jpg" alt="">
+    </a>
 </body>
 </html>
