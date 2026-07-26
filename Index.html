@@ -4,19 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Jefferson Tattoo | Tatuagem Oriental a Domicílio em Serra Talhada</title>
-    <meta name="description" content="Tatuagens orientais, geek e personalizadas com atendimento a domicílio em Serra Talhada-PE. Solicite seu orçamento pelo WhatsApp.">
+    <title>Jefferson Tattoo | Tatuagem Oriental, Geek e Autoral em Serra Talhada</title>
+    <meta
+        name="description"
+        content="Projetos de tatuagem oriental, geek e personalizados em Serra Talhada-PE. Envie sua ideia e solicite uma avaliação pelo WhatsApp."
+    >
     <meta name="author" content="Jefferson Tattoo">
     <meta name="theme-color" content="#000000">
 
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
-    <meta property="og:title" content="Jefferson Tattoo | Arte oriental no conforto da sua casa">
-    <meta property="og:description" content="Atendimento a domicílio em Serra Talhada-PE, com projetos personalizados e atenção à biossegurança.">
+    <meta property="og:title" content="Jefferson Tattoo | Arte oriental, geek e autoral">
+    <meta
+        property="og:description"
+        content="Projetos personalizados em Serra Talhada-PE, desenvolvidos de acordo com sua ideia, anatomia e estilo."
+    >
     <meta property="og:image" content="Imagem/Logo.jpg">
 
     <link rel="icon" href="Imagem/Logo.jpg" type="image/jpeg">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Ajustes críticos para celular e acessibilidade.
+         Eles sobrescrevem somente os pontos que precisavam de correção. -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            padding-bottom: calc(88px + env(safe-area-inset-bottom));
+        }
+
+        .hero h2,
+        .section-heading h2,
+        .final-cta h2 {
+            text-wrap: balance;
+        }
+
+        .portfolio-preview-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .portfolio-preview-card {
+            min-height: 220px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.035);
+        }
+
+        .portfolio-preview-card h3 {
+            margin-top: 0;
+        }
+
+        .portfolio-preview-card p {
+            margin-bottom: 0;
+        }
+
+        .price-card .price {
+            overflow-wrap: anywhere;
+        }
+
+        .faq-list summary {
+            position: relative;
+            padding-right: 3.25rem;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        .faq-list summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-list summary::after {
+            content: "+";
+            position: absolute;
+            top: 50%;
+            right: 1.25rem;
+            transform: translateY(-50%);
+            font-size: 1.7rem;
+            line-height: 1;
+            font-weight: 700;
+        }
+
+        .faq-list details[open] summary::after {
+            content: "−";
+        }
+
+        .whatsapp-float {
+            position: fixed !important;
+            right: 16px !important;
+            bottom: calc(16px + env(safe-area-inset-bottom)) !important;
+            width: 56px !important;
+            height: 56px !important;
+            display: grid !important;
+            place-items: center !important;
+            overflow: hidden !important;
+            border-radius: 50% !important;
+            z-index: 1000 !important;
+            transition: opacity 180ms ease, transform 180ms ease !important;
+        }
+
+        .whatsapp-float img {
+            width: 100% !important;
+            height: 100% !important;
+            display: block !important;
+            object-fit: cover !important;
+        }
+
+        .whatsapp-float.is-hidden {
+            opacity: 0 !important;
+            transform: translateY(16px) scale(0.9) !important;
+            pointer-events: none !important;
+        }
+
+        @media (max-width: 900px) {
+            .portfolio-preview-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-bottom: calc(82px + env(safe-area-inset-bottom));
+            }
+
+            .hero h2 {
+                font-size: clamp(2.55rem, 12vw, 4.35rem) !important;
+                line-height: 0.98 !important;
+            }
+
+            .section-heading h2,
+            .final-cta h2 {
+                font-size: clamp(2.1rem, 9vw, 3.2rem) !important;
+                line-height: 1.03 !important;
+            }
+
+            .hero,
+            .section,
+            .section-contrast,
+            .final-cta {
+                scroll-margin-top: 1rem;
+            }
+
+            .whatsapp-float {
+                right: 14px !important;
+                bottom: calc(14px + env(safe-area-inset-bottom)) !important;
+                width: 52px !important;
+                height: 52px !important;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            .whatsapp-float {
+                transition: none !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -28,26 +178,26 @@
                 <img src="Imagem/Logo.jpg" alt="Logotipo Jefferson Tattoo" class="logo">
                 <div class="brand">
                     <h1>Jefferson Tattoo</h1>
-                    <p>Arte oriental no conforto da sua casa</p>
+                    <p>Arte oriental, geek e autoral em Serra Talhada-PE</p>
                 </div>
             </a>
 
             <nav class="menu" aria-label="Navegação principal">
                 <ul>
                     <li><a href="index.html" class="active" aria-current="page">Página inicial</a></li>
-                    <li><a href="Portfólio.html ">Portfólio</a></li>
+                    <li><a href="Portfólio.html">Portfólio</a></li>
                     <li><a href="contato.html">Contato</a></li>
                     <li><a href="sobre-mim.html">Sobre mim</a></li>
                 </ul>
             </nav>
 
             <a
-                href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+                href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20projeto."
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn-whatsapp"
             >
-                Agendar pelo WhatsApp
+                Solicitar avaliação
             </a>
         </div>
     </header>
@@ -57,49 +207,93 @@
             <div class="container hero-grid">
                 <div class="hero-content">
                     <p class="eyebrow">Tatuagem oriental • geek • personalizada</p>
-                    <h2 id="hero-title">Sua próxima tatuagem, sem precisar sair de casa.</h2>
+
+                    <h2 id="hero-title">Sua ideia transformada em uma tatuagem única.</h2>
+
                     <p class="hero-text">
-                        Projetos autorais e personalizados, com atendimento a domicílio em
-                        Serra Talhada-PE e atenção aos cuidados de higiene e biossegurança.
+                        Projetos orientais, geek e personalizados, desenvolvidos de acordo
+                        com sua ideia, anatomia e estilo. Atendimento com hora marcada em
+                        Serra Talhada-PE.
                     </p>
 
                     <div class="hero-actions">
                         <a
-                            href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Quero%20solicitar%20um%20or%C3%A7amento%20para%20uma%20tatuagem."
+                            href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Quero%20solicitar%20uma%20avalia%C3%A7%C3%A3o%20para%20uma%20tatuagem."
                             target="_blank"
                             rel="noopener noreferrer"
                             class="btn-primary"
                         >
-                            Solicitar orçamento
+                            Avaliar meu projeto
                         </a>
+
                         <a href="portfolio.html" class="btn-secondary">Ver portfólio</a>
                     </div>
 
                     <ul class="hero-highlights" aria-label="Diferenciais do atendimento">
-                        <li>Orçamento gratuito</li>
-                        <li>Materiais lacrados e descartáveis</li>
-                        <li>Atendimento personalizado</li>
+                        <li>Avaliação inicial sem custo</li>
+                        <li>Materiais lacrados e de uso único</li>
+                        <li>Projeto pensado para cada pessoa</li>
                     </ul>
                 </div>
 
                 <figure class="hero-image">
-                    <img src="Tatuagem/Dragão.jpg" alt="Tatuagem de dragão em estilo oriental realizada por Jefferson Tattoo">
-                    <figcaption>Arte oriental com projeto personalizado.</figcaption>
+                    <img
+                        src="Tatuagem/Dragão.jpg"
+                        alt="Referência visual de tatuagem com dragão em estilo oriental"
+                    >
+                    <figcaption>
+                        Referência visual de estilo oriental.
+                    </figcaption>
                 </figure>
             </div>
         </section>
 
         <section class="container section intro-section" aria-labelledby="atendimento-title">
             <div class="section-heading">
-                <p class="eyebrow">Conforto, planejamento e identidade</p>
-                <h2 id="atendimento-title">Atendimento 100% a domicílio</h2>
+                <p class="eyebrow">Planejamento, identidade e responsabilidade</p>
+                <h2 id="atendimento-title">Atendimento com hora marcada</h2>
             </div>
 
             <p>
-                Sou Jefferson, tatuador focado em <strong>estilo oriental, geek e projetos personalizados</strong>.
-                Levo o material necessário até o local combinado e preparo o atendimento de forma organizada,
-                para transformar sua ideia em uma tatuagem com significado.
+                Sou Jefferson, artista de Serra Talhada em desenvolvimento na tatuagem,
+                com foco em <strong>projetos orientais, geek e personalizados</strong>.
+                Cada ideia é avaliada antes do agendamento para definir desenho, tamanho,
+                posicionamento e condições adequadas para o atendimento.
             </p>
+        </section>
+
+        <section class="container section" aria-labelledby="portfolio-preview-title">
+            <div class="section-heading">
+                <p class="eyebrow">Trabalho real, evolução visível</p>
+                <h2 id="portfolio-preview-title">Portfólio organizado por categoria</h2>
+            </div>
+
+            <div class="portfolio-preview-grid">
+                <article class="portfolio-preview-card">
+                    <h3>Trabalhos realizados</h3>
+                    <p>
+                        Tatuagens feitas por Jefferson, com identificação clara de cada projeto.
+                    </p>
+                </article>
+
+                <article class="portfolio-preview-card">
+                    <h3>Estudos em pele sintética</h3>
+                    <p>
+                        Exercícios técnicos que mostram linhas, preenchimento, evolução e prática.
+                    </p>
+                </article>
+
+                <article class="portfolio-preview-card">
+                    <h3>Projetos disponíveis</h3>
+                    <p>
+                        Desenhos autorais e flashes que podem ser reservados para tatuagem.
+                    </p>
+                </article>
+            </div>
+
+            <div class="hero-actions">
+                <a href="portfolio.html" class="btn-primary">Abrir portfólio completo</a>
+            </div>
         </section>
 
         <section class="container section" aria-labelledby="diferenciais-title">
@@ -110,21 +304,28 @@
 
             <div class="benefits-grid">
                 <article class="benefit-card">
-                    <span class="card-icon" aria-hidden="true">⌂</span>
-                    <h3>Conforto em casa</h3>
-                    <p>Você recebe o atendimento no local combinado, sem precisar se deslocar até um estúdio.</p>
+                    <span class="card-icon" aria-hidden="true">✦</span>
+                    <h3>Projeto personalizado</h3>
+                    <p>
+                        Tamanho, composição e posicionamento são avaliados antes do agendamento.
+                    </p>
                 </article>
 
                 <article class="benefit-card">
-                    <span class="card-icon" aria-hidden="true">✦</span>
-                    <h3>Projeto personalizado</h3>
-                    <p>Tamanho, composição e posicionamento são avaliados antes do agendamento.</p>
+                    <span class="card-icon" aria-hidden="true">◎</span>
+                    <h3>Avaliação responsável</h3>
+                    <p>
+                        O projeto é aceito somente quando estiver dentro do meu nível técnico
+                        e das condições adequadas para execução.
+                    </p>
                 </article>
 
                 <article class="benefit-card">
                     <span class="card-icon" aria-hidden="true">✓</span>
                     <h3>Cuidados e orientação</h3>
-                    <p>Após a sessão, você recebe orientações claras para acompanhar a cicatrização.</p>
+                    <p>
+                        Após a sessão, você recebe orientações claras para acompanhar a cicatrização.
+                    </p>
                 </article>
             </div>
         </section>
@@ -133,34 +334,48 @@
             <div class="container">
                 <div class="section-heading">
                     <p class="eyebrow">Simples e transparente</p>
-                    <h2 id="processo-title">Processo de agendamento</h2>
+                    <h2 id="processo-title">Processo de avaliação e agendamento</h2>
                 </div>
 
                 <ol class="process-grid">
                     <li class="process-card">
                         <span class="step-number">01</span>
                         <h3>Envie sua ideia</h3>
-                        <p>Mande referências, tamanho aproximado e local do corpo pelo WhatsApp.</p>
+                        <p>
+                            Mande referências, tamanho aproximado e local do corpo pelo WhatsApp.
+                        </p>
                     </li>
+
                     <li class="process-card">
                         <span class="step-number">02</span>
-                        <h3>Avaliação e orçamento</h3>
-                        <p>Analiso complexidade, dimensões, posicionamento e deslocamento.</p>
+                        <h3>Avaliação do projeto</h3>
+                        <p>
+                            Analiso complexidade, dimensões, posicionamento e viabilidade técnica.
+                        </p>
                     </li>
+
                     <li class="process-card">
                         <span class="step-number">03</span>
-                        <h3>Agendamento</h3>
-                        <p>Definimos data, horário e orientações para preparar o ambiente.</p>
+                        <h3>Definição do atendimento</h3>
+                        <p>
+                            Confirmamos valor, data, horário, formato e local adequado para a sessão.
+                        </p>
                     </li>
+
                     <li class="process-card">
                         <span class="step-number">04</span>
-                        <h3>Atendimento</h3>
-                        <p>Organizo a bancada, preparo o material e realizo a tatuagem.</p>
+                        <h3>Realização</h3>
+                        <p>
+                            A área de trabalho e os materiais são preparados antes do procedimento.
+                        </p>
                     </li>
+
                     <li class="process-card">
                         <span class="step-number">05</span>
                         <h3>Cuidados finais</h3>
-                        <p>Explico os cuidados necessários durante o processo de cicatrização.</p>
+                        <p>
+                            Você recebe instruções para acompanhar o processo de cicatrização.
+                        </p>
                     </li>
                 </ol>
             </div>
@@ -168,40 +383,43 @@
 
         <section class="container section" aria-labelledby="precos-title">
             <div class="section-heading">
-                <p class="eyebrow">Valores de referência</p>
-                <h2 id="precos-title">Faixa de preços</h2>
+                <p class="eyebrow">Orçamento transparente</p>
+                <h2 id="precos-title">Cada projeto recebe uma avaliação individual</h2>
             </div>
 
             <div class="price-grid">
                 <article class="price-card">
-                    <h3>Pequenas</h3>
-                    <p class="price">A partir de R$ 80</p>
-                    <p>Projetos simples de até aproximadamente 5 cm.</p>
-                </article>
-
-                <article class="price-card">
-                    <h3>Médias</h3>
-                    <p class="price">A partir de R$ 150</p>
-                    <p>Peças entre aproximadamente 5 e 12 cm.</p>
+                    <h3>Valor mínimo de atendimento</h3>
+                    <p class="price">Definido após avaliação</p>
+                    <p>
+                        O cálculo considera materiais, desenho, montagem, execução,
+                        limpeza e demais etapas do atendimento.
+                    </p>
                 </article>
 
                 <article class="price-card featured">
-                    <p class="price-label">Projeto em destaque</p>
-                    <h3>Orientais detalhadas</h3>
-                    <p class="price">A partir de R$ 400</p>
-                    <p>Valor definido conforme tamanho, detalhes e área do corpo.</p>
+                    <p class="price-label">Oportunidade de portfólio</p>
+                    <h3>Projetos selecionados</h3>
+                    <p class="price">Condição especial</p>
+                    <p>
+                        Alguns desenhos autorais podem receber condição diferenciada
+                        para desenvolvimento do portfólio.
+                    </p>
                 </article>
 
                 <article class="price-card">
-                    <h3>Projetos grandes</h3>
+                    <h3>Projetos detalhados ou grandes</h3>
                     <p class="price">Sob orçamento</p>
-                    <p>Composição personalizada após análise da sua ideia.</p>
+                    <p>
+                        Valor definido conforme composição, nível de detalhes,
+                        área do corpo e tempo estimado.
+                    </p>
                 </article>
             </div>
 
             <p class="section-note">
-                Os valores são estimativas. O orçamento final depende do desenho, tamanho, posição no corpo,
-                nível de detalhes e deslocamento.
+                O orçamento final depende do desenho, tamanho, posição no corpo,
+                nível de detalhes e condições do atendimento.
             </p>
         </section>
 
@@ -214,17 +432,18 @@
                     </div>
 
                     <p>
-                        O atendimento é preparado para reduzir riscos e manter a área de trabalho organizada
-                        durante toda a sessão.
+                        O atendimento é preparado para reduzir riscos, proteger as superfícies
+                        e manter a área de trabalho organizada durante toda a sessão.
                     </p>
                 </div>
 
                 <ul class="check-list">
-                    <li>Agulhas lacradas e abertas na presença do cliente</li>
-                    <li>Materiais descartáveis ou esterilizados conforme a necessidade</li>
+                    <li>Agulhas, cartuchos e lâminas descartáveis e de uso único</li>
+                    <li>Materiais abertos na presença do cliente</li>
                     <li>Uso de equipamentos de proteção individual</li>
-                    <li>Superfícies protegidas durante o procedimento</li>
-                    <li>Descarte adequado dos materiais utilizados</li>
+                    <li>Superfícies protegidas, higienizadas e desinfetadas</li>
+                    <li>Descarte de perfurocortantes em recipiente apropriado</li>
+                    <li>Pigmentos fracionados individualmente para cada atendimento</li>
                 </ul>
             </div>
         </section>
@@ -234,22 +453,30 @@
                 <div>
                     <div class="section-heading">
                         <p class="eyebrow">Onde atendo</p>
-                        <h2 id="area-title">Área de atendimento</h2>
+                        <h2 id="area-title">Serra Talhada e região</h2>
                     </div>
 
-                    <p>Atendimento principal em <strong>Serra Talhada-PE</strong>, incluindo bairros e regiões próximas.</p>
+                    <p>
+                        Atendimento principal em <strong>Serra Talhada-PE</strong>,
+                        com hora marcada. O formato e o local são confirmados após a avaliação
+                        das condições necessárias para o procedimento.
+                    </p>
                 </div>
 
                 <div class="service-area-card">
                     <h3>Cidades vizinhas</h3>
-                    <p>O atendimento pode ser realizado mediante disponibilidade e taxa de deslocamento.</p>
+                    <p>
+                        A disponibilidade para outras cidades é analisada individualmente,
+                        incluindo deslocamento e condições do local.
+                    </p>
+
                     <a
-                        href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Gostaria%20de%20verificar%20se%20voc%C3%AA%20atende%20na%20minha%20localiza%C3%A7%C3%A3o."
+                        href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Gostaria%20de%20verificar%20a%20disponibilidade%20de%20atendimento%20na%20minha%20cidade."
                         target="_blank"
                         rel="noopener noreferrer"
                         class="text-link"
                     >
-                        Consultar minha localização
+                        Consultar disponibilidade
                     </a>
                 </div>
             </div>
@@ -257,30 +484,34 @@
 
         <section class="container section" aria-labelledby="estilos-title">
             <div class="section-heading">
-                <p class="eyebrow">Arte com história</p>
-                <h2 id="estilos-title">Estilos e símbolos</h2>
+                <p class="eyebrow">Arte com identidade</p>
+                <h2 id="estilos-title">Estilos e temas de interesse</h2>
             </div>
 
             <div class="style-grid">
                 <article class="style-card">
                     <h3>Dragões</h3>
-                    <p>Força, sabedoria e proteção.</p>
+                    <p>Composições inspiradas em força, movimento e proteção.</p>
                 </article>
+
                 <article class="style-card">
                     <h3>Carpas Koi</h3>
-                    <p>Persistência, transformação e coragem.</p>
+                    <p>Projetos ligados a persistência, transformação e coragem.</p>
                 </article>
+
                 <article class="style-card">
                     <h3>Flores de lótus</h3>
-                    <p>Renascimento, equilíbrio e superação.</p>
+                    <p>Elementos associados a equilíbrio, renovação e superação.</p>
                 </article>
+
                 <article class="style-card">
                     <h3>Samurais</h3>
-                    <p>Disciplina, honra e determinação.</p>
+                    <p>Composições com disciplina, presença e narrativa visual.</p>
                 </article>
+
                 <article class="style-card">
                     <h3>Geek e anime</h3>
-                    <p>Personagens e referências adaptados para a pele.</p>
+                    <p>Personagens e referências reinterpretados para tatuagem.</p>
                 </article>
             </div>
         </section>
@@ -288,23 +519,39 @@
         <section class="container section" aria-labelledby="faq-title">
             <div class="section-heading">
                 <p class="eyebrow">Dúvidas frequentes</p>
-                <h2 id="faq-title">Antes de agendar</h2>
+                <h2 id="faq-title">Antes de solicitar a avaliação</h2>
             </div>
 
             <div class="faq-list">
                 <details>
                     <summary>Como recebo o orçamento?</summary>
-                    <p>Envie sua referência, tamanho aproximado e local do corpo pelo WhatsApp.</p>
+                    <p>
+                        Envie sua referência, tamanho aproximado e local do corpo pelo WhatsApp.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Onde acontece o atendimento?</summary>
+                    <p>
+                        O formato e o local são definidos após a avaliação do projeto
+                        e das condições necessárias para a realização segura da sessão.
+                    </p>
                 </details>
 
                 <details>
                     <summary>Existe taxa de deslocamento?</summary>
-                    <p>Pode existir para cidades vizinhas ou locais mais distantes. O valor é informado antes do agendamento.</p>
+                    <p>
+                        Pode existir para cidades vizinhas ou locais mais distantes.
+                        O valor é informado antes da confirmação.
+                    </p>
                 </details>
 
                 <details>
-                    <summary>Preciso preparar o ambiente?</summary>
-                    <p>Sim. Antes da sessão, você recebe orientações sobre espaço, iluminação e limpeza do local.</p>
+                    <summary>Como devo me preparar?</summary>
+                    <p>
+                        Antes da sessão, você recebe orientações sobre alimentação,
+                        descanso, roupas e demais cuidados necessários.
+                    </p>
                 </details>
             </div>
         </section>
@@ -313,11 +560,11 @@
             <div class="container final-cta-content">
                 <div>
                     <p class="eyebrow">Vamos transformar sua ideia em arte</p>
-                    <h2 id="cta-title">Envie sua referência e solicite seu orçamento.</h2>
+                    <h2 id="cta-title">Envie sua referência e solicite uma avaliação.</h2>
                 </div>
 
                 <a
-                    href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Vim%20pelo%20site%20e%20quero%20come%C3%A7ar%20meu%20projeto%20de%20tatuagem."
+                    href="https://wa.me/5587981823489?text=Ol%C3%A1%2C%20Jefferson!%20Vim%20pelo%20site%20e%20quero%20solicitar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20projeto%20de%20tatuagem."
                     target="_blank"
                     rel="noopener noreferrer"
                     class="btn-primary"
@@ -356,5 +603,22 @@
     >
         <img src="Imagem/images.jpg" alt="" aria-hidden="true">
     </a>
+
+    <script>
+        // Esconde o botão flutuante quando o botão final já está visível.
+        const whatsappFloat = document.querySelector(".whatsapp-float");
+        const finalCta = document.querySelector(".final-cta");
+
+        if (whatsappFloat && finalCta && "IntersectionObserver" in window) {
+            const observer = new IntersectionObserver(
+                ([entry]) => {
+                    whatsappFloat.classList.toggle("is-hidden", entry.isIntersecting);
+                },
+                { threshold: 0.15 }
+            );
+
+            observer.observe(finalCta);
+        }
+    </script>
 </body>
 </html>
